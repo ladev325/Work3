@@ -63,3 +63,10 @@ void Shop::sortByPrice()
 		sorted[i].showInfo();
 	}
 }
+
+void Shop::printGoods() const
+{
+for (int i = 0; i < shop.size(); i++) {
+		shop[i].showInfo();
+	}
+}

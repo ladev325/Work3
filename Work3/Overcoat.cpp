@@ -3,6 +3,7 @@
 
 Overcoat::Overcoat() {
     counter ++;
+    number = counter;
 	name = "";
 	type = "";
 	size = "S";
@@ -11,6 +12,7 @@ Overcoat::Overcoat() {
 
 Overcoat::Overcoat(string name, string type, string size, int price) {
     counter++;
+    number = counter;
     this->name = name;
 	this->type = type;
 	this->size = size;
@@ -110,12 +112,12 @@ void Overcoat::showInfo() const
     cout << "Type: " << type << endl;
     cout << "Size: " << size << endl;
     cout << "Price: " << price << endl;
-    cout << "Id: " << counter << endl;
+    cout << "Id: " << number << endl;
     cout << "---------------" << endl;
 }
 
 int Overcoat::getCounter()const {
-    return counter;
+    return number;
 }
 
 string Overcoat::getType()const{

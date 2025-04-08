@@ -6,8 +6,23 @@ using namespace std;
 int Overcoat::counter = 0;
 
 int main() {
-	Overcoat o1("", "", "", 1);
-	Overcoat o2("", "", "", 1);
+	Shop shop;
+	shop.addOvercoat(Overcoat("Name1", "Type1", "S", 100));
+	shop.addOvercoat(Overcoat("Name2", "Type2", "M", 1000));
+	shop.addOvercoat(Overcoat("Name3", "Type3", "L", 2000));
+	shop.addOvercoat(Overcoat("Name4", "Type4", "XL", 500));
+
+	shop.sortByPrice();
+	cout << "==============";
+	shop.deleteOvercoat(2);
+	shop.printGoods();
+	cout << "==============";
+	shop.plusSize(1);
+	/shop.printGoods();
+	cout << "==============";
+	shop.searchByType("Type1");
+
+
 
 	return 0;
 }

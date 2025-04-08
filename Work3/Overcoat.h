@@ -34,6 +34,7 @@ public:
 
 private:
 	static int counter;
+	int number;
 	string name;
 	string type;
 	string size;

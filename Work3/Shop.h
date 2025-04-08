@@ -12,6 +12,7 @@ public:
 	void plusSize(int number);
 	void searchByType(string type);
 	void sortByPrice();
+	void printGoods()const;
 private:
 	vector<Overcoat> shop;
 };
