@@ -22,9 +22,15 @@ public:
     friend ostream& operator<<(ostream& out, const Overcoat& obj);
 
 	void setName(string name);
-	void setType(string name);
-	void setSize(string name);
-	void setPrice(string name);
+	void setType(string type);
+	void setSize(string size);
+	void setPrice(int price);
+	void showInfo()const;
+	int getCounter()const;
+	string getType()const;
+	int getPrice()const;
+	string getSize()const;
+	string getName()const;
 
 private:
 	static int counter;
