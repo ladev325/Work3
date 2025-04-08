@@ -13,16 +13,14 @@ int main() {
 	shop.addOvercoat(Overcoat("Name4", "Type4", "XL", 500));
 
 	shop.sortByPrice();
-	cout << "==============";
+	cout << "==============" << endl;
 	shop.deleteOvercoat(2);
 	shop.printGoods();
-	cout << "==============";
+	cout << "==============" << endl;
 	shop.plusSize(1);
 	shop.printGoods();
-	cout << "==============";
+	cout << "==============" << endl;
 	shop.searchByType("Type1");
-
-
 
 	return 0;
 }

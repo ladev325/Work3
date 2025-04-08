@@ -50,9 +50,9 @@ bool Overcoat::operator<=(const Overcoat& a) const
 Overcoat& Overcoat::operator++()
 { 
     if (size == "S") size = "M";
-    if (size == "M") size = "L";
-    if (size == "L") size = "XL";
-    if (size == "XL") size = "XXL";
+    else if (size == "M") size = "L";
+    else if (size == "L") size = "XL";
+    else if (size == "XL") size = "XXL";
     return *this;
 }
 
@@ -60,18 +60,18 @@ Overcoat Overcoat::operator++(int)
 {
     Overcoat tmp = *this;
     if (size == "S") size = "M";
-    if (size == "M") size = "L";
-    if (size == "L") size = "XL";
-    if (size == "XL") size = "XXL";
+    else if (size == "M") size = "L";
+    else if (size == "L") size = "XL";
+    else if (size == "XL") size = "XXL";
     return tmp;
 }
 
 Overcoat& Overcoat::operator--()
 {
     if (size == "M") size = "S";
-    if (size == "L") size = "M";
-    if (size == "XL") size = "L";
-    if (size == "XXL") size = "XL";
+    else if (size == "L") size = "M";
+    else if (size == "XL") size = "L";
+    else if (size == "XXL") size = "XL";
     return *this;
 }
 
@@ -79,9 +79,9 @@ Overcoat Overcoat::operator--(int)
 {
     Overcoat tmp = *this;
     if (size == "M") size = "S";
-    if (size == "L") size = "M";
-    if (size == "XL") size = "L";
-    if (size == "XXL") size = "XL";
+    else if (size == "L") size = "M";
+    else if (size == "XL") size = "L";
+    else if (size == "XXL") size = "XL";
     return tmp;
 }
 
