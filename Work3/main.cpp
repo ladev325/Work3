@@ -18,7 +18,7 @@ int main() {
 	shop.printGoods();
 	cout << "==============";
 	shop.plusSize(1);
-	/shop.printGoods();
+	shop.printGoods();
 	cout << "==============";
 	shop.searchByType("Type1");
 
